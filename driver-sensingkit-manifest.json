@@ -1,0 +1,35 @@
+{
+	"manifest-version": 1,
+
+	"name": "driver-sensingkit",
+	"version": "0.2.2",
+	"description": "A Databox driver that provides SensingKit mobile sensor data",
+	"author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+	"license": "MIT",
+
+	"databox-type": "driver",
+
+	"tags": [
+		"mobile",
+		"phone",
+		"sensor",
+		"sensors",
+		"sensingkit",
+		"driver"
+	],
+
+	"homepage": "https://github.com/me-box/driver-sensingkit",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/driver-sensingkit.git"
+	},
+
+	"network-permissions": [
+	],
+	"hardware-permissions": [
+	],
+
+	"resource-requirements": {
+		"store":"core-store"
+	}
+}
