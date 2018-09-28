@@ -88,5 +88,10 @@
     "store":"core-store"
   },
 
+  "providedDataTypes": [
+    {"type": "twitter:sentiment:UserTimeline"},
+    {"type": "twitter:sentiment:HashTag"}
+  ],
+
   "volumes": []
 }
