@@ -1,0 +1,46 @@
+{
+	"manifest-version": 1,
+	"name": "spotify-driver",
+	"databox-type": "driver",
+	"version": "5.2",
+	"description": "A driver to gather information about your spotify play history.",
+	"author": "Edgar Bodiaj <Edgar.Bodiaj@nottingham.ac.uk>",
+	"license": "MIT",
+	"tags": [
+		"spotify",
+		"history",
+		"driver",
+		"databox"
+	],
+	"homepage": "https://github.com/me-box/driver-spotify",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/driver-spotify/"
+	},
+	"external-whitelist": [
+		{
+			"urls": [
+				"https://accounts.spotify.com/api/token",
+				"https://accounts.spotify.com/authorize",
+				"https://api.spotify.com"
+			]
+		}
+	],
+	"resource-requirements": {
+		"store": "core-store"
+	},
+	"provides": [
+		{
+			"data-source-type": "spotify::playlistData",
+			"description": "Spotify Playlist Data",
+			"store-type": "kv",
+			"schema": {}
+		},
+		{
+			"data-source-type": "spotify::topArtists",
+			"description": "Spotify top artists Data",
+			"store-type": "kv",
+			"schema": {}
+		}
+	]
+}
