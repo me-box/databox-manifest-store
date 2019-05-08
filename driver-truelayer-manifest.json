@@ -1,0 +1,48 @@
+{
+	"manifest-version": 1,
+	"name": "driver-truelayer",
+	"version": "0.0.1",
+	"description": "A simple Databox driver to stream truelayer data",
+	"author": "Kleomenis Katevas <k.katevas@imperial.ac.uk> ()",
+	"license": "MIT",
+	"databox-type": "driver",
+	"tags": [
+		"store",
+		"blob",
+		"db",
+		"native",
+		"json",
+		"timeseries"
+	],
+	"homepage": "https://github.com/me-box/driver-truelayer",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/driver-truelayer.git"
+	},
+	"external-whitelist": [
+		{
+			"urls": [
+				"https://auth.truelayer.com",
+				"https://api.truelayer.com"
+			],
+			"description": "Access TrueLayer's API"
+		}
+	],
+	"resource-requirements": {
+		"store": "core-store"
+	},
+	"provides": [
+		{
+			"data-source-type": "truelayerUserBalance",
+			"description": "TrueLayer user Balance data",
+			"store-type": "tsblob",
+			"schema": {}
+		},
+		{
+			"data-source-type": "truelayerUserTransactions",
+			"description": "TrueLayer user Transactions data",
+			"store-type": "tsblob",
+			"schema": {}
+		}
+	]
+}
